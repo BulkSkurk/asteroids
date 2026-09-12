@@ -3,8 +3,8 @@ from constants import PLAYER_RADIUS, LINE_WIDTH, PLAYER_TURN_SPEED, PLAYER_SPEED
 import pygame
 
 class Player(CircleShape):
-    def __init__(self, x_pos: float, y_pos: float):
-        super().__init__(x_pos,y_pos, PLAYER_RADIUS)
+    def __init__(self, x: float, y: float):
+        super().__init__(x,y, PLAYER_RADIUS)
         self.rotation = 0
 
     def triangle(self) -> list[pygame.Vector2]:
